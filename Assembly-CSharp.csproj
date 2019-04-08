@@ -60,7 +60,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\AddNewPlayer.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
+    <Compile Include="Assets\Scripts\GameScript.cs" />
     <Compile Include="Assets\Scripts\LoadSceneOnClicks.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/milosz/Documents/GitHub/Dwarves-vs-Goblins/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
