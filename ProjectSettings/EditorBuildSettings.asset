@@ -17,4 +17,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PickPlayers.unity
     guid: d7fb6133d8a5b29468df7d514e009a44
+  - enabled: 1
+    path: Assets/Scenes/GameSettings.unity
+    guid: 069a13d697ccc014ab198f005ec04c5e
+  - enabled: 1
+    path: Assets/Scenes/PlayerRoles.unity
+    guid: de9341ea94ca43f4493f087fed43e643
+  - enabled: 1
+    path: Assets/Scenes/Discussion.unity
+    guid: e758c4ffef26fdd4cbb7a18fae4dd478
+  - enabled: 1
+    path: Assets/Scenes/TarotPick.unity
+    guid: 17011d3f7bb46ca419264e67203db00f
   m_configObjects: {}

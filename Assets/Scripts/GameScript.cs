@@ -7,7 +7,7 @@ public class GameScript : MonoBehaviour
 {
     public static int PlayerCount;
     public static int PlayerCountAlive;
-    public static List<string> Players;
+    public static List<string> Players = new List<string>();
     public static string[] DoorsFinal;
     public static string[] PickColors = { "red", "green", "brown", "black", "white" };
     public static string[] DoorExtra = {"none", "visor","door number"};
