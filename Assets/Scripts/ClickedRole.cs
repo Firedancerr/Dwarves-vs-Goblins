@@ -8,6 +8,7 @@ public class ClickedRole : MonoBehaviour
 {
     int i = 0;
     public Text roleView;
+    public Text buttonText;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,16 +20,18 @@ public class ClickedRole : MonoBehaviour
         {
             roleView.text = GameScript.Players[PlayerInit.playerCounter - 1] + "\nRole : " + Random.Range(0, 4);
             i++;
+            buttonText.text = "Done";
         }
         else if (PlayerInit.playerCounter<GameScript.PlayerCount)
         {
-            roleView.text = "Player " + PlayerInit.playerCounter.ToString() + "\n" + GameScript.Players[PlayerInit.playerCounter - 1] + "\nPress the button to view your role";
+            roleView.text = "Player " + PlayerInit.playerCounter.ToString() + "\n" + GameScript.Players[PlayerInit.playerCounter] + "\nPress the button to view your role";
             PlayerInit.playerCounter++;
             i--;
+            buttonText.text = "View Player Role";
         }
         else
         {
-            SceneManager.LoadScene(7);
+            SceneManager.LoadScene(6);
         }
     }
     // Update is called once per frame

@@ -268,8 +268,6 @@ MonoBehaviour:
 
     Name
 
-    Click Here
-
     Role:'
 --- !u!222 &783403740
 CanvasRenderer:
@@ -523,6 +521,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roleView: {fileID: 783403739}
+  buttonText: {fileID: 1183020413}
 --- !u!1 &1183020411
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Discussion : MonoBehaviour
 {
-    float timeLeft = 120.0f;
+    float timeLeft = GameScript.DiscussionTime;
     public Text timer;
     // Start is called before the first frame update
     void Start()
