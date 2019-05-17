@@ -20,17 +20,18 @@ public class GameScript : MonoBehaviour
     public static List<string> Goblin = new List<string>();
     public static List<string> Seer = new List<string>();
     public static List<string> Dwarf = new List<string>();
+    public static string[] TarotPick;
+    public static int TarotCards = 13;
     public static string[] DoorsFinalGood;
     public static string[] DoorsFinalBad;
     public static string[] DoorsFinalBad2;
     public static string[] DoorsFinalBad3;
-    public static string[] DoorsFinalBad4;
-    public static string[] PickColors = { "red", "green", "brown", "black", "white" };
-    public static string[] DoorExtra = {"none", "visor","door number"};
-    public static string[] PickMaterials = {"wooden","metal"};
-    public static string[] DoorMat = {"square","triangle","circle" };
-    public static string[] DoorKnob = { "circle", "straight" };
-    public static string[] DoorFinish = {"normal, matte, polished"};
+    public static string[] PickColors = { "red", "green", "brown", "black", "white"};
+    public static string[] DoorExtra = {"hole", "visor","door number","nameplate"};
+    public static string[] PickMaterials = {"wooden","metal","glass","plastic"};
+    public static string[] DoorMat = {"square","triangle","circle","tattered"};
+    public static string[] DoorKnob = { "circle", "simple","square","weird"};
+    public static string[] DoorFinish = {"normal", "dirty", "polished","broken"};
 
     // Start is called before the first frame update
     void Start()
