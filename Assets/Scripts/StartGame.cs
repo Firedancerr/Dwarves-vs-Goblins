@@ -17,6 +17,7 @@ public class StartGame : MonoBehaviour
         GameScript.DiscussionTime = (int)sliderUI2.value;
         GameScript.GoblinNumber = (int)sliderUI3.value;
         GameScript.SeerCounter = (int)sliderUI4.value;
+        GameScript.DoorsNow = GameScript.Doors;
         if (narrator.isOn == false) GameScript.HumanNarrator = 0;
         else GameScript.HumanNarrator = 1;
     }

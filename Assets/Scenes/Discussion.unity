@@ -482,6 +482,7 @@ GameObject:
   - component: {fileID: 267530076}
   - component: {fileID: 267530075}
   - component: {fileID: 267530077}
+  - component: {fileID: 267530078}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -558,6 +559,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: {fileID: 871516074}
+--- !u!114 &267530078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 267530073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1b8a775a1508ee4c982606c60a0af47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text1: {fileID: 304649226}
+  text2: {fileID: 645777689}
+  text3: {fileID: 238105546}
+  text4: {fileID: 261341017}
+  texts: []
+  txt1: 
+  txt2: 
+  txt3: 
+  txt4: 
 --- !u!1 &304649224
 GameObject:
   m_ObjectHideFlags: 0
