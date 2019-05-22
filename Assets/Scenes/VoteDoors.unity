@@ -601,7 +601,7 @@ GameObject:
   - component: {fileID: 780534785}
   - component: {fileID: 780534784}
   m_Layer: 5
-  m_Name: Text
+  m_Name: xtxt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -659,7 +659,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: View Player Role
+  m_Text: Press the button to begin voting
 --- !u!222 &780534785
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1207,8 +1207,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -102}
-  m_SizeDelta: {x: 239.5, y: 44.9}
+  m_AnchoredPosition: {x: 4.9, y: -102}
+  m_SizeDelta: {x: 390.4, y: 44.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1922919643
 MonoBehaviour:

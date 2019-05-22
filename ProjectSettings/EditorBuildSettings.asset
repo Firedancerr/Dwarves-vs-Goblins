@@ -47,4 +47,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: 7278dba76b5243c4fb26509085bffd9c
+  - enabled: 1
+    path: Assets/Scenes/PostDoorsVote.unity
+    guid: 7f4c179212b90e64d8319aff3e4bdfba
   m_configObjects: {}

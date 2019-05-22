@@ -14,7 +14,7 @@ public class StartGame : MonoBehaviour
     public void Start()
     {
         GameScript.Doors = (int)sliderUI.value;
-        GameScript.DiscussionTime = (int)sliderUI2.value;
+        GameScript.DiscussionTime = (int)sliderUI2.value * 60;
         GameScript.GoblinNumber = (int)sliderUI3.value;
         GameScript.SeerCounter = (int)sliderUI4.value;
         GameScript.DoorsNow = GameScript.Doors;

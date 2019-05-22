@@ -175,7 +175,7 @@ public class RandomPick : MonoBehaviour
                 }
             }
             int[] RandomDoors = {RandomedColor,RandomedExtra,RandomedMaterial, RandomedMat, RandomedKnob, RandomedFinish};
-            if (i==1)
+            if (i == 1)
             {
                 GameScript.DoorsFinalGood = RandomDoors;
             }
@@ -186,13 +186,13 @@ public class RandomPick : MonoBehaviour
             }
             if (i == 3)
             {
-                GameScript.DoorsFinalBad = RandomDoors;
-                GameScript.DoorsFinalBad[SameType2] = GameScript.DoorsFinalGood[SameType2];
+                GameScript.DoorsFinalBad2 = RandomDoors;
+                GameScript.DoorsFinalBad2[SameType2] = GameScript.DoorsFinalBad[SameType2];
             }
             if (i == 4)
             {
-                GameScript.DoorsFinalBad = RandomDoors;
-                GameScript.DoorsFinalBad[SameType3] = GameScript.DoorsFinalGood[SameType3];
+                GameScript.DoorsFinalBad3 = RandomDoors;
+                GameScript.DoorsFinalBad3[SameType3] = GameScript.DoorsFinalBad2[SameType3];
             }
 
         }
