@@ -15,6 +15,8 @@ public class GameScript : MonoBehaviour
     public static int SeerNumber;
     public static int SeerCounter;
     public static int HumanNarrator;
+    public static int DwarfNumber;
+    public static int DwarfCounter;
     public static int EndGameResult;
     public static List<string> Players = new List<string>();
     public static List<string> Goblin = new List<string>();

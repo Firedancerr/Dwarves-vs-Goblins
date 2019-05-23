@@ -10,10 +10,10 @@ public class ShowDoors : MonoBehaviour
     public Text text3;
     public Text text4;
     
-    public string txt1="";
-    public string txt2="";
-    public string txt3="";
-    public string txt4="";
+    public static string txt1="";
+    public static string txt2="";
+    public static string txt3="";
+    public static string txt4="";
 
     // Start is called before the first frame update
     void Start()

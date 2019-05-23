@@ -25,7 +25,7 @@ public class AddNewPlayer : MonoBehaviour
             GameScript.PlayerCount++;
             PlayerList.text = PlayerList.text + "\n" + PlayerName.text + " " + GameScript.PlayerCount.ToString();
             GameScript.Players.Add(PlayerName.text);
-            PlayerName.text = "";
+            PlayerName.text = " ";
         }
     }
 }

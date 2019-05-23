@@ -16,7 +16,10 @@ public class StartGame : MonoBehaviour
         GameScript.Doors = (int)sliderUI.value;
         GameScript.DiscussionTime = (int)sliderUI2.value * 60;
         GameScript.GoblinNumber = (int)sliderUI3.value;
-        GameScript.SeerCounter = (int)sliderUI4.value;
+        GameScript.SeerNumber = (int)sliderUI4.value;
+        GameScript.GoblinCounter = 0;
+        GameScript.SeerCounter = 0;
+        GameScript.DwarfNumber = GameScript.PlayerCount - GameScript.GoblinNumber - GameScript.SeerNumber;
         GameScript.DoorsNow = GameScript.Doors;
         if (narrator.isOn == false) GameScript.HumanNarrator = 0;
         else GameScript.HumanNarrator = 1;

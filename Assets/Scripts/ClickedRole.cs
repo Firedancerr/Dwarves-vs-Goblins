@@ -18,7 +18,21 @@ public class ClickedRole : MonoBehaviour
     {
         if (i==0)
         {
-            roleView.text = GameScript.Players[PlayerInit.playerCounter - 1] + "\nRole : " + Random.Range(0, 4);
+            if (GameScript.Goblin.Contains(GameScript.Players[PlayerInit.playerCounter - 1]))
+            {
+                roleView.text = GameScript.Players[PlayerInit.playerCounter - 1] + "\nRole : Goblin";
+            }
+            else if (GameScript.Seer.Contains(GameScript.Players[PlayerInit.playerCounter - 1]))
+            {
+
+                roleView.text = GameScript.Players[PlayerInit.playerCounter - 1] + "\nRole : Seer \nNext door will be/have: ";
+
+            }
+                else
+            {
+                roleView.text = GameScript.Players[PlayerInit.playerCounter - 1] + "\nRole : Dwarf";
+            }
+                
             i++;
             buttonText.text = "Done";
         }
