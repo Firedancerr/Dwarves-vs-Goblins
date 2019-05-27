@@ -8,7 +8,8 @@ public class VoteDoors : MonoBehaviour
 {
     int i = 0;
     public Text roleView;
-    private int playerCounter = 1;
+    public Button ViewButton;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -17,36 +18,41 @@ public class VoteDoors : MonoBehaviour
     }
     public void DoorButton(int doorNumber)
     {
-        if (doorNumber == 1)
-        {
-            GameScript.VotedOnDoors[1]++;
-        }
-        else if (doorNumber == 2)
-        {
-            GameScript.VotedOnDoors[2]++;
-        }
-        else if (doorNumber == 3)
-        {
-            GameScript.VotedOnDoors[3]++;
-        }
-        else if (doorNumber == 4)
-        {
-            GameScript.VotedOnDoors[4]++;
-        }
+        GameScript.VotedOnDoors[doorNumber]++;
+        i++;
+            DoorVoteInit.doorButton.gameObject.SetActive(false);
+            DoorVoteInit.doorButton2.gameObject.SetActive(false);
+            DoorVoteInit.doorButton3.gameObject.SetActive(false);
+            DoorVoteInit.doorButton4.gameObject.SetActive(false);
     }
 
     public void MainButton(int sceneIndex)
     {
+        foreach (string player in GameScript.Players.GetRange(DoorVoteInit.playerCounter, GameScript.Players.Count-DoorVoteInit.playerCounter))
+        {
+            if (GameScript.Dead.Contains(player)) DoorVoteInit.playerCounter++;
+            else break;
+        }
         if (i == 0)
         {
-            roleView.text = GameScript.Players[playerCounter - 1] + " pick your choice.";
+            roleView.text = GameScript.Players[DoorVoteInit.playerCounter - 1] + " pick your choice.";
             i++;
+            ViewButton.gameObject.SetActive(false);
+            if (DoorVoteInit.door1 == true)
+                DoorVoteInit.doorButton.gameObject.SetActive(true);
+            if (DoorVoteInit.door2 == true)
+                DoorVoteInit.doorButton2.gameObject.SetActive(true);
+            if (DoorVoteInit.door3 == true)
+                DoorVoteInit.doorButton3.gameObject.SetActive(true);
+            if (DoorVoteInit.door4 == true)
+                DoorVoteInit.doorButton4.gameObject.SetActive(true);
         }
-        else if (playerCounter < GameScript.PlayerCount)
+        else if (DoorVoteInit.playerCounter < GameScript.PlayerCount)
         {
-            roleView.text = "Player " + playerCounter.ToString() + "\n" + GameScript.Players[playerCounter] + "\nPress the button to begin voting";
-            playerCounter++;
+            roleView.text = "Player " + DoorVoteInit.playerCounter.ToString() + "\n" + GameScript.Players[DoorVoteInit.playerCounter] + "\nPress the button to begin voting";
+            DoorVoteInit.playerCounter++;
             i--;
+            ViewButton.gameObject.SetActive(true);
         }
         else
         {

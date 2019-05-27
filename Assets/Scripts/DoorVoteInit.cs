@@ -8,10 +8,10 @@ using UnityEngine.UI;
 
 public class DoorVoteInit : MonoBehaviour
 {
-    public Button doorButton;
-    public Button doorButton2;
-    public Button doorButton3;
-    public Button doorButton4;
+    public static Button doorButton;
+    public static Button doorButton2;
+    public static Button doorButton3;
+    public static Button doorButton4;
     public Text doorText;
     public Text doorText2;
     public Text doorText3;
@@ -20,9 +20,17 @@ public class DoorVoteInit : MonoBehaviour
     public static bool door2=true;
     public static bool door3=true;
     public static bool door4=true;
+    public static int playerCounter = 1;
+    public Text roleView;
     // Start is called before the first frame update
     void Start()
     {
+        foreach (string player in GameScript.Players)
+        {
+            if (GameScript.Dead.Contains(player)) playerCounter++;
+            else break;
+        }
+        roleView.text = "Player " + playerCounter.ToString() + "\n" + GameScript.Players[playerCounter] + "\nPress the button to begin voting";
         if (ShowDoors.txt1 == "")
         {
             doorButton.gameObject.SetActive(false);

@@ -416,15 +416,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb3fca2a4966bae4a917cc972963387a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roleView: {fileID: 0}
-  doorButton: {fileID: 0}
-  doorButton2: {fileID: 0}
-  doorButton3: {fileID: 0}
-  doorButton4: {fileID: 389248402}
-  doorText: {fileID: 0}
-  doorText2: {fileID: 0}
-  doorText3: {fileID: 0}
-  doorText4: {fileID: 1939799059}
+  roleView: {fileID: 1939799059}
 --- !u!1 &389788144
 GameObject:
   m_ObjectHideFlags: 0
@@ -646,15 +638,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb3fca2a4966bae4a917cc972963387a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roleView: {fileID: 0}
-  doorButton: {fileID: 0}
-  doorButton2: {fileID: 713446470}
-  doorButton3: {fileID: 0}
-  doorButton4: {fileID: 0}
-  doorText: {fileID: 0}
-  doorText2: {fileID: 1035268849}
-  doorText3: {fileID: 0}
-  doorText4: {fileID: 0}
+  roleView: {fileID: 1035268849}
 --- !u!1 &780534782
 GameObject:
   m_ObjectHideFlags: 0
@@ -825,6 +809,7 @@ GameObject:
   - component: {fileID: 1155241944}
   - component: {fileID: 1155241943}
   - component: {fileID: 1155241942}
+  - component: {fileID: 1155241946}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -918,6 +903,26 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1155241946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155241941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bb371ca139514d448712c6b698b3d56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doorButton: {fileID: 1771247730}
+  doorButton2: {fileID: 713446470}
+  doorButton3: {fileID: 1775905602}
+  doorButton4: {fileID: 389248402}
+  doorText: {fileID: 345979957}
+  doorText2: {fileID: 1035268849}
+  doorText3: {fileID: 389788146}
+  doorText4: {fileID: 1939799059}
 --- !u!1 &1569865573
 GameObject:
   m_ObjectHideFlags: 0
@@ -1142,15 +1147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb3fca2a4966bae4a917cc972963387a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roleView: {fileID: 0}
-  doorButton: {fileID: 1771247730}
-  doorButton2: {fileID: 0}
-  doorButton3: {fileID: 0}
-  doorButton4: {fileID: 0}
-  doorText: {fileID: 345979957}
-  doorText2: {fileID: 0}
-  doorText3: {fileID: 0}
-  doorText4: {fileID: 0}
+  roleView: {fileID: 345979957}
 --- !u!1 &1775905600
 GameObject:
   m_ObjectHideFlags: 0
@@ -1293,15 +1290,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb3fca2a4966bae4a917cc972963387a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roleView: {fileID: 0}
-  doorButton: {fileID: 0}
-  doorButton2: {fileID: 0}
-  doorButton3: {fileID: 1775905602}
-  doorButton4: {fileID: 0}
-  doorText: {fileID: 0}
-  doorText2: {fileID: 1035268849}
-  doorText3: {fileID: 389788146}
-  doorText4: {fileID: 0}
+  roleView: {fileID: 389788146}
 --- !u!1 &1922919641
 GameObject:
   m_ObjectHideFlags: 0
@@ -1460,14 +1449,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roleView: {fileID: 207907527}
-  doorButton: {fileID: 0}
-  doorButton2: {fileID: 0}
-  doorButton3: {fileID: 0}
-  doorButton4: {fileID: 0}
-  doorText: {fileID: 0}
-  doorText2: {fileID: 0}
-  doorText3: {fileID: 0}
-  doorText4: {fileID: 0}
 --- !u!1 &1939799057
 GameObject:
   m_ObjectHideFlags: 0

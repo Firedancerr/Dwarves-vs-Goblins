@@ -22,6 +22,7 @@ public class GameScript : MonoBehaviour
     public static List<string> Goblin = new List<string>();
     public static List<string> Seer = new List<string>();
     public static List<string> Dwarf = new List<string>();
+    public static List<string> Dead = new List<string>();
     public static int[] VotedOnPlayer;
     public static int[] VotedOnDoors;
     public static string[] TarotPick;
