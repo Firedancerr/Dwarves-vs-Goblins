@@ -9,7 +9,7 @@ public class ShowDoors : MonoBehaviour
     public Text text2;
     public Text text3;
     public Text text4;
-    
+    public static int postvote = 0;
     public static string txt1="";
     public static string txt2="";
     public static string txt3="";
@@ -18,6 +18,8 @@ public class ShowDoors : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if (postvote ==0)
+        { 
         Text[] texts = new Text[4];
         texts[0] = text1;
         texts[1] = text2;
@@ -57,6 +59,7 @@ public class ShowDoors : MonoBehaviour
             texts[1].text = txt2;
             texts[2].text = txt3;
             texts[3].text = txt4;
+            }
         }
     }
 
@@ -65,8 +68,10 @@ public class ShowDoors : MonoBehaviour
         // Knuth shuffle algorithm :: courtesy of Wikipedia :)
         for (int t = 0; t < texts.Length; t++)
         {
+            
             Text tmp = texts[t];
             int r = Random.Range(t, texts.Length);
+            GameScript.DoorRandoms[t + 1] = r;
             texts[t] = texts[r];
             texts[r] = tmp;
         }

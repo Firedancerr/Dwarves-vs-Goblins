@@ -70,6 +70,7 @@
     <Compile Include="Assets\Scripts\GameSettingsStartup.cs" />
     <Compile Include="Assets\Scripts\LoadSceneOnClicks.cs" />
     <Compile Include="Assets\Scripts\PlayerInit.cs" />
+    <Compile Include="Assets\Scripts\PostDoorVote.cs" />
     <Compile Include="Assets\Scripts\RandomPick.cs" />
     <Compile Include="Assets\Scripts\ShowDoors.cs" />
     <Compile Include="Assets\Scripts\SliderValueToText.cs" />

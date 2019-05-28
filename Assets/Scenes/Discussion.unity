@@ -406,7 +406,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Door 3
+  m_Text: 
 --- !u!222 &238105547
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -485,7 +485,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Door 4
+  m_Text: 
 --- !u!222 &261341018
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -599,10 +599,6 @@ MonoBehaviour:
   text2: {fileID: 645777689}
   text3: {fileID: 238105546}
   text4: {fileID: 261341017}
-  txt1: 
-  txt2: 
-  txt3: 
-  txt4: 
 --- !u!1 &304649224
 GameObject:
   m_ObjectHideFlags: 0
@@ -673,7 +669,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Door 1
+  m_Text: 
 --- !u!222 &304649227
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -858,7 +854,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Door 2
+  m_Text: 
 --- !u!222 &645777690
 CanvasRenderer:
   m_ObjectHideFlags: 0
