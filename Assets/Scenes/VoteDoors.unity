@@ -1311,7 +1311,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1775905605}
-        m_MethodName: MainButton
+        m_MethodName: DoorButton
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

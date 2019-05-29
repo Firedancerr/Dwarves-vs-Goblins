@@ -20,7 +20,7 @@ public class ClickedRole : MonoBehaviour
         {
             if (GameScript.Goblin.Contains(GameScript.Players[PlayerInit.playerCounter - 1]))
             {
-                roleView.text = GameScript.Players[PlayerInit.playerCounter - 1] + "\nRole : Goblin";
+                roleView.text = GameScript.Players[PlayerInit.playerCounter - 1] + "\nRole : Goblin\nNext doors are " + GameScript.PickColors[GameScript.DoorsFinalGood[0]] + " " + GameScript.PickMaterials[GameScript.DoorsFinalGood[2]] + " " + GameScript.DoorFinish[GameScript.DoorsFinalGood[5]] + " doors with " + GameScript.DoorExtra[GameScript.DoorsFinalGood[1]] + ", " + GameScript.DoorMat[GameScript.DoorsFinalGood[3]] + " doormat and " + GameScript.DoorKnob[GameScript.DoorsFinalGood[4]] + " doorknob.";
             }
             else if (GameScript.Seer.Contains(GameScript.Players[PlayerInit.playerCounter - 1]))
             {

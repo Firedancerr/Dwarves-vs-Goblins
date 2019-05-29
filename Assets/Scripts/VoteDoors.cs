@@ -30,7 +30,7 @@ public class VoteDoors : MonoBehaviour
        
         if (!(DoorVoteInit.VoteplayerCounter < GameScript.PlayerCount))
         {
-            SceneManager.LoadScene(7);
+            SceneManager.LoadScene(14);
         }
         else
 

@@ -77,6 +77,8 @@
     <Compile Include="Assets\Scripts\StartGame.cs" />
     <Compile Include="Assets\Scripts\TarotCard.cs" />
     <Compile Include="Assets\Scripts\VoteDoors.cs" />
+    <Compile Include="Assets\Scripts\VoteKill.cs" />
+    <Compile Include="Assets\Scripts\VoteKillInit.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/milosz/Documents/GitHub/Dwarves-vs-Goblins/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>

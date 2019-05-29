@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/VoteDoorsSummary.unity
+- path: Assets/Scenes/VoteKill.unity
   isLoaded: 1
   isActive: 1
