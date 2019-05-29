@@ -14,31 +14,31 @@ public class PostDoorVote : MonoBehaviour
     {
         ShowDoors.postvote = 1;
         GameScript.DoorsNow--;
-        
-        if (GameScript.DoorRandoms[1] == GameScript.VotedOnDoors.Max())
+
+        if (GameScript.GoodDoors == GameScript.VotedOnDoors.ToList().IndexOf(GameScript.VotedOnDoors.Max()))
         {
             good = true;
-            result.text = "Correct doors have been chosen.\nProceed to the Tarot.";
+            result.text = "Correct doors have been chosen.\nProceed to the Tarot.\n";
         }
         else
         {
             good = false;
-            result.text = "Incorrect doors have been chosen.\nVoting on who to kill will commence.";
+            result.text = "Incorrect doors have been chosen.\nVoting on who to kill will commence.\n" ;
             if (GameScript.VotedOnDoors.Max() == 1)
             {
-                ShowDoors.txt1 = "";
+                ShowDoors.txt[0] = "";
             }
             if (GameScript.VotedOnDoors.Max() == 2)
             {
-                ShowDoors.txt2 = "";
+                ShowDoors.txt[1] = "";
             }
             if (GameScript.VotedOnDoors.Max() == 3)
             {
-                ShowDoors.txt3 = "";
+                ShowDoors.txt[2] = "";
             }
             if (GameScript.VotedOnDoors.Max() == 4)
             {
-                ShowDoors.txt4 = "";
+                ShowDoors.txt[3] = "";
             }
         }
         for (int i = 0; i < GameScript.VotedOnDoors.Length; i++)

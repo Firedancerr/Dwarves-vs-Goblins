@@ -25,36 +25,36 @@ public class DoorVoteInit : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       /* foreach (string player in GameScript.Players)
-        {
-            if (GameScript.Dead.Contains(player)) playerCounter++;
-            else break;
-        }*/
+        /* foreach (string player in GameScript.Players)
+         {
+             if (GameScript.Dead.Contains(player)) playerCounter++;
+             else break;
+         }*/
         roleView.text = "Player " + VoteplayerCounter.ToString() + "\n" + GameScript.Players[VoteplayerCounter - 1] + "\nPress the button to begin voting";
-        if (ShowDoors.txt1 == "")
+        if (ShowDoors.txt[0] == "")
         {
-            
+
             door1 = false;
         }
-        else doorText.text = ShowDoors.txt1;
-        if (ShowDoors.txt2 == "")
+        else doorText.text = ShowDoors.txt[0];
+        if (ShowDoors.txt[1] == "")
         {
             
             door2 = false;
         }
-        else doorText2.text = ShowDoors.txt2;
-        if (ShowDoors.txt3 == "")
+        else doorText2.text = ShowDoors.txt[1];
+        if (ShowDoors.txt[2] == "")
         {
             
             door3 = false;
         }
-        else doorText3.text = ShowDoors.txt3;
-        if (ShowDoors.txt4 == "")
+        else doorText3.text = ShowDoors.txt[2];
+        if (ShowDoors.txt[3] == "")
         {
             
             door4 = false;
         }
-        else doorText4.text = ShowDoors.txt4;
+        else doorText4.text = ShowDoors.txt[3];
         doorButton.gameObject.SetActive(false);
         doorButton2.gameObject.SetActive(false);
         doorButton3.gameObject.SetActive(false);

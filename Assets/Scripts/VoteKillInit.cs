@@ -8,32 +8,33 @@ public class VoteKillInit : MonoBehaviour
 {
     public Button[] voteButton;
     public Text[] voteText;
-    public static int VoteplayerCounter;
+    public int VoteplayerCounter = 1;
     public Text roleView;
     public Button roleViewButton;
-    // Start is called before the first frame update
+
     void Start()
     {
-        VoteplayerCounter = 1;
+        int i = 1;
         roleView.text = "Player " + VoteplayerCounter.ToString() + "\n" + GameScript.Players[VoteplayerCounter - 1] + "\nPress the button to begin voting";
         foreach (string player in GameScript.Players)
         {
-            voteText[VoteplayerCounter].text = player;
-            VoteplayerCounter++;
+            voteText[i - 1].text = player;
+            i++;
         }
         ClickOff();
     }
 
     public void VoteButton(int voteNumber)
     {
-        ClickOff();
+        
         GameScript.VotedOnPlayer[voteNumber]++;
-        if (!(DoorVoteInit.VoteplayerCounter < GameScript.PlayerCount))
+        if (!(VoteplayerCounter < GameScript.PlayerCount))
         {
             SceneManager.LoadScene(7);
         }  
         else
         {
+            ClickOff();
             VoteplayerCounter++;
             roleView.text = "Player " + VoteplayerCounter.ToString() + "\n" + GameScript.Players[VoteplayerCounter - 1] + "\nPress the button to begin voting";   
         }
@@ -50,8 +51,11 @@ public class VoteKillInit : MonoBehaviour
 
     void ClickOn()
     {
-        for (int k = 0; k < 16; k++) voteButton[k].gameObject.SetActive(true);
-        roleViewButton.gameObject.SetActive(false);
+        for (int k = 0; k < GameScript.PlayerCountAlive; k++) 
+        {
+            voteButton[k].gameObject.SetActive(true);
+        }
+            roleViewButton.gameObject.SetActive(false);
     }
     void ClickOff()
     {
