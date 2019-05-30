@@ -486,6 +486,7 @@ GameObject:
   - component: {fileID: 1117944696}
   - component: {fileID: 1117944695}
   - component: {fileID: 1117944694}
+  - component: {fileID: 1117944697}
   m_Layer: 5
   m_Name: Card
   m_TagString: Untagged
@@ -551,7 +552,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1117944695}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1117944697}
+        m_MethodName: LoadByIndex
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 16
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1117944695
@@ -591,6 +603,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1117944692}
   m_CullTransparentMesh: 0
+--- !u!114 &1117944697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1117944692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 020c8872dd5fd6d4ea62c96de7c72499, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1574866869
 GameObject:
   m_ObjectHideFlags: 0

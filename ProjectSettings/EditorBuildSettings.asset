@@ -27,11 +27,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Discussion.unity
     guid: e758c4ffef26fdd4cbb7a18fae4dd478
   - enabled: 1
-    path: Assets/Scenes/TarotPick.unity
-    guid: 17011d3f7bb46ca419264e67203db00f
-  - enabled: 1
     path: Assets/Scenes/DiscussionTarot.unity
     guid: 927312def736c4a49bbb0f4562568a8d
+  - enabled: 1
+    path: Assets/Scenes/TarotPick.unity
+    guid: 17011d3f7bb46ca419264e67203db00f
   - enabled: 1
     path: Assets/Scenes/VoteDoors.unity
     guid: 5a803fa602523c149be7af87a6450cd4
@@ -53,4 +53,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/VoteKillSummary.unity
     guid: 205011b117e129d49a946a269a752a1d
+  - enabled: 1
+    path: Assets/Scenes/TarotResult.unity
+    guid: c121ca7a5ba94154a87593a77f82c918
   m_configObjects: {}
