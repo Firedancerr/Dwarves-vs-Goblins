@@ -50,4 +50,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/VoteDoorsSummary.unity
     guid: 9b7650a2b1b0df44fbc63bbde654ccd7
+  - enabled: 1
+    path: Assets/Scenes/VoteKillSummary.unity
+    guid: 205011b117e129d49a946a269a752a1d
   m_configObjects: {}

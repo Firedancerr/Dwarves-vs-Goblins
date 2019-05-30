@@ -28,15 +28,15 @@ public class VoteKillInit : MonoBehaviour
     {
         
         GameScript.VotedOnPlayer[voteNumber]++;
-        if (!(VoteplayerCounter < GameScript.PlayerCount))
+        if (!(VoteplayerCounter < GameScript.PlayerCountAlive))
         {
-            SceneManager.LoadScene(7);
+            SceneManager.LoadScene(15);
         }  
         else
         {
             ClickOff();
             VoteplayerCounter++;
-            roleView.text = "Player " + VoteplayerCounter.ToString() + "\n" + GameScript.Players[VoteplayerCounter - 1] + "\nPress the button to begin voting";   
+            roleView.text = "Player " + VoteplayerCounter.ToString() + "\n" + GameScript.Players[VoteplayerCounter - 1] + "\nPress the button to begin voting" ;   
         }
         
     }
@@ -45,7 +45,6 @@ public class VoteKillInit : MonoBehaviour
     {
         ClickOn();
         roleView.text = "Player " + VoteplayerCounter.ToString() + "\n" + GameScript.Players[VoteplayerCounter - 1] + "\nVote on a player that should die.";
-        GameScript.VotedOnPlayer[voteNumber]++;
 
     }
 

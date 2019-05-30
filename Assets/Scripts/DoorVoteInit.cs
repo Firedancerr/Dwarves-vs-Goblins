@@ -30,6 +30,7 @@ public class DoorVoteInit : MonoBehaviour
              if (GameScript.Dead.Contains(player)) playerCounter++;
              else break;
          }*/
+        VoteplayerCounter = 1;
         roleView.text = "Player " + VoteplayerCounter.ToString() + "\n" + GameScript.Players[VoteplayerCounter - 1] + "\nPress the button to begin voting";
         if (ShowDoors.txt[0] == "")
         {

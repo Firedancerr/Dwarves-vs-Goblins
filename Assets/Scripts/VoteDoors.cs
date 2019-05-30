@@ -28,7 +28,7 @@ public class VoteDoors : MonoBehaviour
             doorButton4.gameObject.SetActive(false);
         ViewButton.gameObject.SetActive(true);
        
-        if (!(DoorVoteInit.VoteplayerCounter < GameScript.PlayerCount))
+        if (!(DoorVoteInit.VoteplayerCounter < GameScript.PlayerCountAlive))
         {
             SceneManager.LoadScene(14);
         }

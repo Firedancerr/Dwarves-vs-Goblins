@@ -24,22 +24,7 @@ public class PostDoorVote : MonoBehaviour
         {
             good = false;
             result.text = "Incorrect doors have been chosen.\nVoting on who to kill will commence.\n" ;
-            if (GameScript.VotedOnDoors.Max() == 1)
-            {
-                ShowDoors.txt[0] = "";
-            }
-            if (GameScript.VotedOnDoors.Max() == 2)
-            {
-                ShowDoors.txt[1] = "";
-            }
-            if (GameScript.VotedOnDoors.Max() == 3)
-            {
-                ShowDoors.txt[2] = "";
-            }
-            if (GameScript.VotedOnDoors.Max() == 4)
-            {
-                ShowDoors.txt[3] = "";
-            }
+            ShowDoors.txt[GameScript.VotedOnDoors.ToList().IndexOf(GameScript.VotedOnDoors.Max())-1] = "";
         }
         for (int i = 0; i < GameScript.VotedOnDoors.Length; i++)
         {

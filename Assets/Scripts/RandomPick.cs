@@ -174,6 +174,7 @@ public class RandomPick : MonoBehaviour
                     RandomedFinish = Random.Range(0, GameScript.DoorFinish.Length);
                 }
             }
+
             int[] RandomDoors = {RandomedColor,RandomedExtra,RandomedMaterial, RandomedMat, RandomedKnob, RandomedFinish};
             if (i == 1)
             {

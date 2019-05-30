@@ -12,8 +12,6 @@ public class AddNewPlayer : MonoBehaviour
     private void Start()
     {
         PopUp.SetActive(false);
-        GameScript.PlayerCount = 0;
-        GameScript.PlayerCountAlive = 0;
     }
     public void Clicked(int popupHide)
     {
@@ -26,7 +24,7 @@ public class AddNewPlayer : MonoBehaviour
             PopUp.SetActive(false);
             GameScript.PlayerCount++;
             GameScript.PlayerCountAlive++ ;
-            PlayerList.text = PlayerList.text + "\n" + PlayerName.text + " " + GameScript.PlayerCount.ToString();
+            PlayerList.text += "\n" + PlayerName.text + " " + GameScript.PlayerCount.ToString();
             GameScript.Players.Add(PlayerName.text);
             PlayerName.text = " ";
         }

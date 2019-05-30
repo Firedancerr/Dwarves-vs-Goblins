@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class GameScript : MonoBehaviour
 {
-    public static int PlayerCount;
-    public static int PlayerCountAlive;
+    public static int PlayerCount = 0;
+    public static int PlayerCountAlive = 0;
     public static int Doors;
     public static int DoorsNow;
     public static int DiscussionTime;
@@ -17,7 +17,7 @@ public class GameScript : MonoBehaviour
     public static int HumanNarrator;
     public static int DwarfNumber;
     public static int DwarfCounter;
-    public static int EndGameResult;
+    public static int EndGameResult=0;
     public static List<string> Players = new List<string>();
     public static List<string> Goblin = new List<string>();
     public static List<string> Seer = new List<string>();
