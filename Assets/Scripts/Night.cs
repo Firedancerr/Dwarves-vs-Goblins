@@ -17,6 +17,7 @@ public class Night : MonoBehaviour
         for (int k = 0; k < GameScript.VotedOnPlayer.Length; k++) GameScript.VotedOnPlayer[k] = 0;
         for (int k = 0; k < GameScript.VotedOnDoors.Length; k++) GameScript.VotedOnDoors[k] = 0;
         ShowDoors.postvote = 0;
+        
     }
     public void LoadByIndex(int sceneIndex)
     {
