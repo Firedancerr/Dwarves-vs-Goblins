@@ -15,6 +15,10 @@ public class PostKillVote : MonoBehaviour
     {
         string toDie = GameScript.Players[GameScript.VotedOnPlayer.ToList().IndexOf(GameScript.VotedOnPlayer.Max())-1];
         result.text =  "Player " + toDie + "has been chosen to die.";
+        for (int i = 0; i < GameScript.VotedOnPlayer.Length; i++)
+        {
+            GameScript.VotedOnPlayer[i] = 0;
+        }
         GameScript.Dead.Add(toDie);
         if (GameScript.Goblin.Contains(toDie))
         {

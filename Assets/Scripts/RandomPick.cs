@@ -30,6 +30,10 @@ public class RandomPick : MonoBehaviour
         string[] Mat = new string[GameScript.DoorMat.Length];
         string[] Knob = new string[GameScript.DoorKnob.Length];
         string[] Finish = new string[GameScript.DoorFinish.Length];*/
+        ShowDoors.txt[0] = "";
+        ShowDoors.txt[1] = "";
+        ShowDoors.txt[2] = "";
+        ShowDoors.txt[3] = "";
         SameType1 = Random.Range(0, 6);
         SameType2 = Random.Range(0, 6);
         SameType3 = Random.Range(0, 6);

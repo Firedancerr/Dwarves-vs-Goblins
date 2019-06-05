@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Discussion : MonoBehaviour
 {
@@ -31,6 +32,7 @@ public class Discussion : MonoBehaviour
         timer.text = minutes.ToString("00") + ":" + seconds.ToString("00");
         if (timeLeft < 0)
         {
+            SceneManager.LoadScene(9);
         }
     }
 }

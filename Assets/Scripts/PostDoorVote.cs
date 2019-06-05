@@ -14,8 +14,9 @@ public class PostDoorVote : MonoBehaviour
     {
         ShowDoors.postvote = 1;
         GameScript.DoorsNow--;
+        
 
-        if (GameScript.GoodDoors == GameScript.VotedOnDoors.ToList().IndexOf(GameScript.VotedOnDoors.Max()))
+        if (ShowDoors.goodtxt == ShowDoors.txt[GameScript.VotedOnDoors.ToList().IndexOf(GameScript.VotedOnDoors.Max())-1])
         {
             good = true;
             result.text = "Correct doors have been chosen.\nProceed to the Tarot.\n";
@@ -23,7 +24,7 @@ public class PostDoorVote : MonoBehaviour
         else
         {
             good = false;
-            result.text = "Incorrect doors have been chosen.\nVoting on who to kill will commence.\n" ;
+            result.text = "Incorrect doors have been chosen.\nVoting on who to kill will commence.\n";
             ShowDoors.txt[GameScript.VotedOnDoors.ToList().IndexOf(GameScript.VotedOnDoors.Max())-1] = "";
         }
         for (int i = 0; i < GameScript.VotedOnDoors.Length; i++)

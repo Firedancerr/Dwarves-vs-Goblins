@@ -9,6 +9,7 @@ public class StartGame : MonoBehaviour
     public Slider sliderUI2;
     public Slider sliderUI3;
     public Slider sliderUI4;
+    public Slider sliderUI5;
     public Toggle narrator;
 
     public void Start()
@@ -17,6 +18,7 @@ public class StartGame : MonoBehaviour
         GameScript.DiscussionTime = (int)sliderUI2.value * 60;
         GameScript.GoblinNumber = (int)sliderUI3.value;
         GameScript.SeerNumber = (int)sliderUI4.value;
+        GameScript.Rounds = (int)sliderUI5.value;
         GameScript.GoblinCounter = 0;
         GameScript.SeerCounter = 0;
         GameScript.DwarfNumber = GameScript.PlayerCount - GameScript.GoblinNumber - GameScript.SeerNumber;
