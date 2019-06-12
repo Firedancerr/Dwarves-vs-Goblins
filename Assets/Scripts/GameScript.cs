@@ -8,6 +8,7 @@ public class GameScript : MonoBehaviour
     public static int PlayerCount = 0;
     public static int PlayerCountAlive = 0;
     public static int Rounds;
+    public static int RoundNow;
     public static int Doors;
     public static int DoorsNow;
     public static int DiscussionTime;

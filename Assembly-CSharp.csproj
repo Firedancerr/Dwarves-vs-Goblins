@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\DiscussionTarot.cs" />
     <Compile Include="Assets\Scripts\DoorVoteInit.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
+    <Compile Include="Assets\Scripts\GameOver.cs" />
     <Compile Include="Assets\Scripts\GameScript.cs" />
     <Compile Include="Assets\Scripts\GameSettingsStartup.cs" />
     <Compile Include="Assets\Scripts\LoadSceneOnClicks.cs" />
