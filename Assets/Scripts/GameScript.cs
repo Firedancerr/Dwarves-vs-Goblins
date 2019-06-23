@@ -29,8 +29,9 @@ public class GameScript : MonoBehaviour
     public static int[] VotedOnDoors = { 0, 0, 0, 0, 0 };
     public static int GoodDoors;
     public static int[] DoorRandoms = new int[5];
-    public static string[] TarotPick;
-    public static int TarotCards = 13;
+    public static int TarotPick;
+    public static int TarotCards = 3;
+    public static int TarotRotation;
     public static int[] DoorsFinalGood;
     public static int[] DoorsFinalBad;
     public static int[] DoorsFinalBad2;

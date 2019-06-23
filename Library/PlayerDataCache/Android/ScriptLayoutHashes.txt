@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-C:/Users/milosz/Downloads/f.apk
+C:/Dwarves-vs-Goblins/Final.apk
 SceneListBegin?
 Assets/Scenes/Menu.unity
 Assets/Scenes/Settings.unity
@@ -139,12 +139,14 @@ d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.Spa
 94017dcc9f00fe671ea7dc427b4da011 Unity.TextMeshPro.dll:TMPro.TMP_SpriteAsset
 f07180a0fe436fef18584d09108091d5 Assembly-CSharp.dll:.ShowDoors
 34601de022bc0ccd5d0124f9e44a76cb Assembly-CSharp.dll:.VoteKillInit
+4ce15e99c635d2567873d27549d1f16f Assembly-CSharp.dll:.TarotScript
 a4982097dd51611fdef458950f4fedb3 Assembly-CSharp.dll:.ClickedRole
 b3ab2106268377ffe25dd18ac23dca28 Unity.TextMeshPro.dll:TMPro.TMP_Asset
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.Analytics.Editor.dll:UnityEditor.Analytics.AnalyticsEventTrackerEditor
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.TextMeshPro.dll:TMPro.TMP_SpriteAnimator
 4fd8bf02e3089425d3502e26c44ba31a Unity.TextMeshPro.dll:TMPro.TextContainer
 a4982097dd51611fdef458950f4fedb3 Assembly-CSharp.dll:.Night
+c112959678dee0417cd071d2e63594c8 Assembly-CSharp.dll:.GameOver
 0802118d6a281b0a72b5553b972c6ae5 Assembly-CSharp.dll:.GameController
 e6ae40841db498b6e673877ac45ad208 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
@@ -192,4 +194,4 @@ c6666661329916e218bee7f5e79e60f5 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 8649814970b42d345b89944b862453cc Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.GameScript
 c127516d0ca3d79e158072b7bd08f3aa Assembly-CSharp.dll:.StartGame
-e7c74816dcdc260307266bf52786a63c Assembly-CSharp.dll:.TarotCard
+0fcc838a3ae9207bdaaffb8112bd1cc3 Assembly-CSharp.dll:.TarotCard

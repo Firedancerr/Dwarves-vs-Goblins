@@ -14,6 +14,7 @@ public class StartGame : MonoBehaviour
 
     public void Start()
     {
+        GameScript.TarotPick = Random.Range(1, GameScript.TarotCards);
         GameScript.Doors = (int)sliderUI.value;
         GameScript.DiscussionTime = (int)sliderUI2.value * 60;
         GameScript.GoblinNumber = (int)sliderUI3.value;
@@ -23,6 +24,7 @@ public class StartGame : MonoBehaviour
         GameScript.SeerCounter = 0;
         GameScript.DwarfNumber = GameScript.PlayerCount - GameScript.GoblinNumber - GameScript.SeerNumber;
         GameScript.DoorsNow = GameScript.Doors;
+        GameScript.RoundNow = 0;
         if (narrator.isOn == false) GameScript.HumanNarrator = 0;
         else GameScript.HumanNarrator = 1;
     }

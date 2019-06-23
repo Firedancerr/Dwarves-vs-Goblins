@@ -13,13 +13,15 @@ public class PostDoorVote : MonoBehaviour
     void Start()
     {
         ShowDoors.postvote = 1;
-        GameScript.DoorsNow--;
+        
         
         
 
          if  (ShowDoors.goodtxt == ShowDoors.txt[GameScript.VotedOnDoors.ToList().IndexOf(GameScript.VotedOnDoors.Max())-1])
         {
-            if (GameScript.RoundNow == GameScript.Rounds)
+            GameScript.RoundNow++;
+            GameScript.DoorsNow = GameScript.Doors;
+            if (GameScript.RoundNow >= GameScript.Rounds)
             {
                 good = true;
                 result.text = "Correct doors have been chosen.\nThat was the last door.";
@@ -33,6 +35,7 @@ public class PostDoorVote : MonoBehaviour
         }
         else
         {
+            GameScript.DoorsNow--;
             good = false;
             result.text = "Incorrect doors have been chosen.\nVoting on who to kill will commence.\n";
             ShowDoors.txt[GameScript.VotedOnDoors.ToList().IndexOf(GameScript.VotedOnDoors.Max())-1] = "";
@@ -49,9 +52,9 @@ public class PostDoorVote : MonoBehaviour
     {
         if (good == true)
         {
-            if (GameScript.RoundNow == GameScript.Rounds) SceneManager.LoadScene(12);
+            if (GameScript.RoundNow >= GameScript.Rounds) SceneManager.LoadScene(12);
             else
-                SceneManager.LoadScene(7);
+                SceneManager.LoadScene(13);
         }
         else
         {

@@ -7,27 +7,76 @@ public class TarotCard : MonoBehaviour
 {
     // Start is called before the first frame update
     public Button card;
+    public Button card2;
+    public Button card3;
     public Button b1;
     public Button b2;
     void Start()
     {
         card.gameObject.SetActive(false);
+        card2.gameObject.SetActive(false);
+        card3.gameObject.SetActive(false);
         int x = Random.Range(0, 2);
-        if (x==0)
+        switch (GameScript.TarotPick)
         {
+            case 1:
+                
+                if (x == 0)
+                {
+                    GameScript.TarotRotation = 0;
+                }
+                else
+                {
+                    GameScript.TarotRotation = 1;
+                    card.gameObject.transform.Rotate(new Vector3(0, 0, 180));
+                }
+                break;
 
+            case 2:
+                if (x == 0)
+                {
+                    GameScript.TarotRotation = 0;
+                }
+                else
+                {
+                    GameScript.TarotRotation = 1;
+                    card.gameObject.transform.Rotate(new Vector3(0, 0, 180));
+                }
+                break;
+
+            case 3:
+                if (x == 0)
+                {
+                    GameScript.TarotRotation = 0;
+                }
+                else
+                {
+                    GameScript.TarotRotation = 1;
+                    card.gameObject.transform.Rotate(new Vector3(0, 0, 180));
+                }
+                break;
         }
-        else
-        {
-            card.gameObject.transform.Rotate(new Vector3(0, 0, 180));
-        }
+
     }
 
     public void LoadByIndex(int sceneIndex)
     {
-        card.gameObject.SetActive(true);
         b1.gameObject.SetActive(false);
         b2.gameObject.SetActive(false);
+        switch (GameScript.TarotPick)
+        {
+            case 1:
+                card.gameObject.SetActive(true);
+                break;
+            case 2:
+                card2.gameObject.SetActive(true);
+                break;
+            case 3:
+                card3.gameObject.SetActive(true);
+                break;
+        }
+
+
     }
 
     // Update is called once per frame

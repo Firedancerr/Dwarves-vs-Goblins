@@ -13,12 +13,18 @@ public class Night : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        GameScript.TarotPick = Random.Range(1, GameScript.TarotCards);
         roleView.text = "Player " + j + "\n" + GameScript.Players[j - 1] + "\nPress the button to view your role";
         for (int k = 0; k < GameScript.VotedOnPlayer.Length; k++) GameScript.VotedOnPlayer[k] = 0;
         for (int k = 0; k < GameScript.VotedOnDoors.Length; k++) GameScript.VotedOnDoors[k] = 0;
         ShowDoors.postvote = 0;
         GameScript.DoorsNow = GameScript.Doors;
-        
+        //for (int i = 0; i < ShowDoors.txt.Length; i++) ShowDoors.txt[i] = "";
+        ShowDoors.postvote = 0;
+        DoorVoteInit.door1 = true;
+        DoorVoteInit.door2 = true;
+        DoorVoteInit.door3 = true;
+        DoorVoteInit.door4 = true;
     }
     public void LoadByIndex(int sceneIndex)
     {
@@ -27,6 +33,18 @@ public class Night : MonoBehaviour
             if (GameScript.Goblin.Contains(GameScript.Players[j - 1]))
             {
                 roleView.text = GameScript.Players[j - 1] + "\nRole : Goblin\nNext doors are " + GameScript.PickColors[GameScript.DoorsFinalGood[0]] + " " + GameScript.PickMaterials[GameScript.DoorsFinalGood[2]] + " " + GameScript.DoorFinish[GameScript.DoorsFinalGood[5]] + " doors with " + GameScript.DoorExtra[GameScript.DoorsFinalGood[1]] + ", " + GameScript.DoorMat[GameScript.DoorsFinalGood[3]] + " doormat and " + GameScript.DoorKnob[GameScript.DoorsFinalGood[4]] + " doorknob.\nTarot: ";
+                switch (GameScript.TarotPick)
+                {
+                    case 1:
+                        roleView.text += "\nTarot: 0 - The Fool\n-1/+1 Door pick";
+                        break;
+                    case 2:
+                        roleView.text += "\nTarot: 1 - The Magician\n-1/+1 Rounds";
+                        break;
+                    case 3:
+                        roleView.text += "\nTarot: 2 - The High Priestess\nReveal goblin/+1 Door pick";
+                        break;
+                }
             }
             else if (GameScript.Seer.Contains(GameScript.Players[j - 1]))
             {
@@ -55,7 +73,18 @@ public class Night : MonoBehaviour
                         break;
                 }
                 roleView.text += "\nTarot: ";
-
+                switch (GameScript.TarotPick)
+                {
+                    case 1:
+                        roleView.text += "Low danger";
+                        break;
+                    case 2:
+                        roleView.text += "Medium danger";
+                        break;
+                    case 3:
+                        roleView.text += "Low danger";
+                        break;
+                }
             }
             else
             {
