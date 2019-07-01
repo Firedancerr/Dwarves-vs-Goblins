@@ -52,9 +52,9 @@ public class PostDoorVote : MonoBehaviour
     {
         if (good == true)
         {
-            if (GameScript.RoundNow >= GameScript.Rounds) SceneManager.LoadScene(12);
+            if (GameScript.RoundNow >= GameScript.Rounds) SceneManager.LoadScene(13);
             else
-                SceneManager.LoadScene(13);
+                SceneManager.LoadScene(7);
         }
         else
         {
